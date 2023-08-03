@@ -15,8 +15,35 @@
 
 <body class="w3-light-grey">
 
+
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+	<div class="w3-top w3-bar w3-card w3-teal">
+		<a class="w3-bar-item w3-button  w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		
+		<a href="#top" class="w3-bar-item w3-button ">Home</a>
+		<a href="#work" class="w3-bar-item w3-button w3-hide-medium">Work Experience</a>
+		<a href="#education" class="w3-bar-item w3-button w3-hide-medium">Education</a>
+		<a href="#publications" class="w3-bar-item w3-button w3-hide-medium">Publications</a>
+		<a href="#volunteering" class="w3-bar-item w3-button w3-hide-medium">Volunteering Experience</a>
+		<a href="#skills" class="w3-bar-item w3-button w3-hide-medium">Skills</a>
+		<a href="#languages" class="w3-bar-item w3-button w3-hide-medium">Languages</a>
+		<a href="#soft_skills" class="w3-bar-item w3-button w3-hide-medium">Soft Skills</a>
+		<a href="#personal_interests" class="w3-bar-item w3-button w3-hide-medium">Personal Interests</a>
+
+		<div id="navSmall" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-top" style="margin-top:46px">
+			<a href="#work" class="w3-bar-item w3-button" onclick="myFunction()">Work Experience</a>
+			<a href="#education" class="w3-bar-item w3-button " onclick="myFunction()">Education</a>
+			<a href="#publications" class="w3-bar-item w3-button " onclick="myFunction()">Publications</a>
+			<a href="#volunteering" class="w3-bar-item w3-button " onclick="myFunction()">Volunteering Experience</a>
+			<a href="#skills" class="w3-bar-item w3-button " onclick="myFunction()">Skills</a>
+			<a href="#languages" class="w3-bar-item w3-button " onclick="myFunction()">Languages</a>
+			<a href="#soft_skills" class="w3-bar-item w3-button " onclick="myFunction()">Soft Skills</a>
+			<a href="#personal_interests" class="w3-bar-item w3-button "onclick="myFunction()">Personal Interests</a>
+		</div>
+
+	</div>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -25,7 +52,7 @@
     <div class="w3-third">
     
 		<div class="w3-white w3-text-grey w3-card-4">
-			<div class="w3-display-container">
+			<div class="w3-display-container" id="top">
 				<img src="files/photo.jpg" style="width:100%" alt="Avatar">
 			</div>
 			<div class="w3-container">
@@ -39,7 +66,7 @@
 
 				<!-- Skills -->
 				<p class="w3-xlarge">
-					<b>
+					<b id="skills">
 						<i class="fa fa-laptop fa-fw w3-margin-right w3-text-green"></i>
 						Skills
 					</b>
@@ -60,12 +87,12 @@
 				<div class="w3-light-grey w3-round-xlarge w3-small">
 					<div class="w3-container w3-center w3-round-xlarge w3-green" style="width:60%">60%</div>
 				</div>
-				<br>
+				<hr>
 
 				<!-- Languages -->
 				<p class="w3-xlarge w3-text-theme">
-					<b>
-						<i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>
+					<b id="languages">
+						<i class="fa fa-language fa-fw w3-margin-right w3-text-teal"></i>
 						Languages
 					</b>
 				</p>
@@ -77,7 +104,7 @@
 				<div class="w3-light-grey w3-round-xlarge">
 					<div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
 				</div>
-				<p><b>German</b> - Abitur Grade:1.0/6</p>
+				<p><b>German</b> - Abitur - Grade:1.0/6</p>
 				<div class="w3-light-grey w3-round-xlarge">
 					<div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
 				</div>
@@ -85,11 +112,11 @@
 				<div class="w3-light-grey w3-round-xlarge">
 					<div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
 				</div>
-				<br>
+				<hr>
 
 				<!-- Soft Skills -->
 				<p class="w3-xlarge w3-text-theme">
-					<b>
+					<b id="soft_skills">
 						<i class="fa fa-cogs fa-fw w3-margin-right w3-text-red"></i>
 						Soft Skills
 					</b>
@@ -98,18 +125,19 @@
 				<p> Team Work  <i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star w3-text-red"></i></p>
 				<p> Project Management <i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star-half-full w3-text-red"></i></p>
 				<p> Creativity <i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star w3-text-red"></i><i class="w3-xlarge fa fa-star-o w3-text-red"></i></p>
-				<br>
+				<hr>
 
 				<!-- Personal Interests -->
 				<p class="w3-xlarge w3-text-theme">
-					<b>
+					<b id="personal_interests">
 						<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-text-green"></i>
 						Personal Interests
 					</b>
 				</p>
-				<p> <i class="w3-xlarge fa fa-camera-retro w3-text-green w3-margin-right"></i> Acting on Stage - Theater</p>
+				<p> <i class="w3-xlarge fa fa-commenting-o w3-text-green w3-margin-right"></i> Acting on Stage - Theater</p>
 				<p> <i class="w3-xlarge fa fa-coffee w3-text-green w3-margin-right"></i> Coffee and Tea Lover</p>
-				<p> <i class="w3-xlarge fa fa-commenting w3-text-green w3-margin-right"></i> Member of the European Youth Parliament</p>
+				<p> <i class="w3-xlarge fa fa-camera-retro w3-text-green w3-margin-right"></i> Photography</p>
+				<p> <i class="w3-xlarge fa fa-handshake-o w3-text-green w3-margin-right"></i>Member of the European Youth Parliament (EYP)</p>
 				<br>
 			</div>
 		</div>
@@ -120,12 +148,13 @@
 
     <!-- Right Column -->
     <div class="w3-twothird">
-		<div class="w3-xxxlarge w3-container w3-text-black w3-right">
+		<br>
+		<div class="w3-xxxlarge w3-container w3-text-black w3-right" id="name">
         	<h1 class="w3-xxxlarge">Camélia Guerraoui</h2>
         </div>
 
 		<!-- Work Experience -->
-		<div class="w3-container w3-card w3-white w3-margin-bottom">
+		<div class="w3-container w3-card w3-white w3-margin-bottom" id="work">
 			<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Work Experience</h2>
 			<div class="w3-container">
 				<h5 class="w3-opacity"><b>Research Part-timer - Natural Language Understanding Team, Riken AIP, Japan</b></h5>
@@ -154,7 +183,7 @@
 		</div>
 
 		<!-- Education -->
-		<div class="w3-container w3-card w3-white">
+		<div class="w3-container w3-card w3-white w3-margin-bottom" id="education">
 			<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-mortar-board fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
 			<div class="w3-container">
 				<h5 class="w3-opacity"><b>Master in Computer Science</b></h5>
@@ -177,7 +206,7 @@
 		</div>
 
 		<!-- Publications -->
-		<div class="w3-container w3-card w3-white">
+		<div class="w3-container w3-card w3-white w3-margin-bottom" id="publications">
 			<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-newspaper-o fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Publications</h2>
 			<div class="w3-container">
 				<h5 class="w3-opacity"><b>Explain to Me What Is Wrong With My Arguments: A Survey about Explanations in Argumentation.</b></h5>
@@ -231,6 +260,27 @@
 			</div>
 		</div>
 
+		<!-- Volunteering -->
+		<div class="w3-container w3-card w3-white w3-margin-bottom" id="volunteering">
+			<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-group fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Volunteering Experience</h2>
+			<div class="w3-container">
+				<h5 class="w3-opacity"><i class="fa fa-handshake-o w3-margin-right"></i><b>European Youth Parliament</b></h5>
+				<p><span class="w3-text-teal w3-margin-left">&nbsp &nbsp &nbsp 2021:</span> <b>Head Organizer</b> of the First International Forum of EYP Post-Covid, France</p>
+				<p><span class="w3-text-teal w3-margin-left">&nbsp &nbsp &nbsp 2020:</span> <b>Editor</b> of a One-Day Session of EYP France, France</p>
+				<p><span class="w3-text-teal">2017-2018:</span> <b>General Secretary</b> of the East-Central Regional Committee of EYP-France</p>
+				<p><span class="w3-text-teal w3-margin-left">&nbsp &nbsp &nbsp 2017:</span> <b>Organizer</b> of the 42nd National Session of EYP-France, France</p>
+				<hr>
+			</div>
+			<div class="w3-container">
+				<h5 class="w3-opacity"><i class="fa fa-globe w3-margin-right"></i><b>Other Clubs</b></h5>
+				<p><span class="w3-text-teal">2020 - 2021:</span> <b>Coordinator</b> of the Biggest French Student Association for a Community-Supported Agriculture, Lyon, France</p>
+				<p><span class="w3-text-teal">2019 - 2021:</span> <b>Writer & Stage Director</b> of the Play <i>Rainbow Warrior</i>, France</p>
+				<p><span class="w3-text-teal">2019 - 2020:</span> <b>Treasurer</b> of the Photo Club at INSA Lyon, France</p>
+				<p><span class="w3-text-teal">2019 - 2020:</span> <b>Tutoring</b> in Mathematics for 2nd-year students at INSA Lyon</p>
+				<p><span class="w3-text-teal">2016 - 2017:</span> <b>Manager</b> of the Theater Club at Jeanne d'Arc High School, Clermont-Ferrand, France</p>
+				<br>
+			</div>
+		</div>
     <!-- End Right Column -->
     </div>
     
@@ -240,7 +290,7 @@
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-green w3-center w3-margin-top">
+<footer class="w3-container w3-teal w3-center w3-margin-top">
 	<p>Find me on social media: 
 		<a href="https://www.linkedin.com/in/cam%C3%A9lia-guerraoui/">
 			<i class="fa fa-linkedin w3-hover-red w3-xlarge"></i>
@@ -256,6 +306,17 @@
 		</a>
 	</p>
 </footer>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("navSmall");
+	if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	} else { 
+		x.className = x.className.replace(" w3-show", "");
+	}
+	}
+</script>
 
 </body>
 </html>
