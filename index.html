@@ -11,6 +11,7 @@
 	html,body,h2,h3,h4,h5,h6{font-family: "Arial", sans-serif}
 	h1{font-family: Optima, serif;}
 	</style>
+	<script type="text/javascript" src="navbar.js"> </script>
 </head>
 
 <body class="w3-light-grey">
@@ -21,7 +22,7 @@
 
 	<!-- NavBar-->
 	<div class="w3-top w3-bar w3-card w3-teal">
-		<a class="w3-bar-item w3-button  w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		<a class="w3-bar-item w3-button  w3-hide-large w3-right" href="javascript:void(0)" onclick="switchNavBar()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 		
 		<a href="#top" class="w3-bar-item w3-button ">Top</a>
 		<a href="#work" class="w3-bar-item w3-button w3-hide-medium w3-hide-small">Work Experience</a>
@@ -310,17 +311,6 @@
 		</a>
 	</p>
 </footer>
-
-<script>
-	function myFunction() {
-	var x = document.getElementById("navSmall");
-	if (x.className.indexOf("w3-show") == -1) {
-		x.className += " w3-show";
-	} else { 
-		x.className = x.className.replace(" w3-show", "");
-	}
-	}
-</script>
 
 </body>
 </html>
